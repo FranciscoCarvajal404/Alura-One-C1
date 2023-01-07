@@ -3,6 +3,19 @@ var btn_dencrypt = document.querySelector(".desencriptar");
 var btn_copy = document.querySelector(".btn-copy");
 var campo_resultado = document.querySelector(".resultado");
 
+function no_mensaje(){
+    if(campo_resultado.value == ""){
+        campo_resultado.style.display = "none";
+        btn_copy.style.display = "none";
+        document.querySelector(".no-mensaje").style.display = "flex";
+    }
+    else{
+        campo_resultado.style.display = "flex";
+        btn_copy.style.display = "flex";
+        document.querySelector(".no-mensaje").style.display = "none";
+    }
+}
+
 function encriptado(){
     campo_resultado.value = "";
     var texto = (document.querySelector(".encriptador").value).toLowerCase();
@@ -26,6 +39,7 @@ function encriptado(){
     }
     var resultado = t.join("");
     campo_resultado.value = resultado;
+    no_mensaje();
     }
 
 function desencriptado(){
@@ -51,13 +65,16 @@ function desencriptado(){
     }
     var resultado = t.join("");
     campo_resultado.value = resultado;
+    no_mensaje();
     }
 
 function copiar(){
-    var copiarTexto = document.querySelector(".resultado").value;
+    var copiarTexto = campo_resultado.value;
     navigator.clipboard.writeText(copiarTexto);
 }
 
+no_mensaje();
 btn_encrypt.onclick = encriptado;
 btn_dencrypt.onclick = desencriptado;
 btn_copy.onclick = copiar;
+

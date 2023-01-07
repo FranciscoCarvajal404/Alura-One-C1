@@ -125,6 +125,15 @@ aside{
     border-radius: 32px;
 }
 
+.no-mensaje{
+    gap: 32px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .info{
     width: 100%;
     
@@ -152,7 +161,8 @@ aside{
 }
 
 .btn-copy{
-    background: black;
+    background: #3c3c3c;
+    border: none;
 }
 
 #btn-copy:hover{
