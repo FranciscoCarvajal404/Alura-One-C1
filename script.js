@@ -53,6 +53,11 @@ function desencriptado(){
     campo_resultado.value = resultado;
     }
 
+function copiar(){
+    var copiarTexto = document.querySelector(".resultado").value;
+    navigator.clipboard.writeText(copiarTexto);
+}
 
 btn_encrypt.onclick = encriptado;
 btn_dencrypt.onclick = desencriptado;
+btn_copy.onclick = copiar;
