@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Encriptador y desencriptador</title>
 </head>
 <body>
-    
-    <header>
-        <img src="img/logo.png" alt="logo">
-    </header>
 
     <main>
+        <div class="principal">
 
-        <textarea name="encriptador" id="encriptador" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="imagen">
+                <img src="img/logo.png" alt="logo" class="logo"> 
+            </div>
+            <textarea name="encriptador" id="encriptador" cols="30" rows="15" placeholder="Ingrese el texto aquí" autofocus></textarea>
 
-        <div class="botones">
+            <div class="inter">
+                <div class="aviso">
+                    <img src="img/Vector.png" alt="aviso">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
 
-            <div class="aviso">
-                <img src="img/Vector.png" alt="aviso">
-                <p>Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button type="submit" name="encriptar">Encriptar</button>
+                    <button type="submit">Desencriptar</button>
+                </div>
             </div>
 
-            <button type="submit" name="encriptar">Encriptar</button>
-            <button type="submit">Desencriptar</button>
         </div>
 
-        <aside>
-            <img src="img/Muñeco.png" alt="Muñeco">
-            <h2>Ningún mensaje fue encontrado</h2>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-        </aside>
+            <aside>
+                <img src="img/Muñeco.png" alt="Muñeco">
+
+                <div class="info">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </aside>
 
     </main>
 

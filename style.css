@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    background: black;
+    color: white;
+
+    height: 90vh;
+    padding: 40px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+main{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal{
+    width: 1000px;
+    gap: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen{
+    width: 100%;
+    display: block;
+}
+
+.logo{
+    width: 96px;
+}
+
+#encriptador{
+    background: black;
+    color: white;
+
+    width: 95%;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.inter{
+    gap: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.aviso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.aviso p{
+    opacity: 0.5;
+}
+
+.botones{
+    gap: 24px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    background: black;
+    color: white;
+
+    height: 60px;
+    padding: 24px 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+
+    border-radius: 24px;
+    border: 2px solid white;
+}
+
+button:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+aside{
+    background: rgb(27, 27, 27);
+
+    height: 80vh;
+    width: 310px;
+    gap: 40px;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 32px;
+}
+
+aside img{
+    width: 336px;
+}
+
+.info{
+    padding: 0px;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    line-height: 30px;
+
+}
