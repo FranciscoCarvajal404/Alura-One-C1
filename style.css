@@ -88,7 +88,7 @@ main{
 }
 
 button{
-    background: black;
+    background: rgb(27, 27, 27);
     color: white;
 
     height: 60px;
@@ -101,7 +101,6 @@ button{
     font-size: 16px;
 
     border-radius: 24px;
-    border: 2px solid white;
 }
 
 button:hover{
