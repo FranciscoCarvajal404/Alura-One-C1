@@ -17,7 +17,7 @@
             <div class="imagen">
                 <img src="img/logo.png" alt="logo" class="logo"> 
             </div>
-            <textarea name="encriptador" id="encriptador" cols="30" rows="15" placeholder="Ingrese el texto aquí" autofocus></textarea>
+            <textarea name="encriptador" class="encriptador" cols="30" rows="15" placeholder="Ingrese el texto aquí" autofocus></textarea>
 
             <div class="inter">
                 <div class="aviso">
@@ -26,8 +26,8 @@
                 </div>
 
                 <div class="botones">
-                    <button type="submit" name="encriptar">Encriptar</button>
-                    <button type="submit">Desencriptar</button>
+                    <button type="button" name="encriptar" class="encriptar">Encriptar</button>
+                    <button type="button" name="dencriptar" class="desencriptar">Desencriptar</button>
                 </div>
             </div>
 
@@ -35,11 +35,11 @@
 
             <aside>
                 <div class="info">
-                    <textarea name="encrypt" id="encrypt" cols="30" rows="45" disabled></textarea>
+                    <textarea name="resultado" class="resultado" cols="30" rows="23" disabled></textarea>
                 </div>
 
                 <div class="btn-aside">
-                    <button id="btn-copy">Copiar</button>
+                    <button type="button" class="btn-copy" name="btn-copy">Copiar</button>
                 </div>
             </aside>
 

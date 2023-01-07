@@ -43,7 +43,7 @@ main{
     width: 96px;
 }
 
-#encriptador{
+.encriptador{
     background: black;
     color: white;
 
@@ -138,16 +138,20 @@ aside{
     line-height: 30px;
 }
 
-#encrypt{
+.resultado{
     width: 100%;
 
     background: rgb(27, 27, 27);
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
 
     border: none;
     resize: none;
 }
 
-#btn-copy{
+.btn-copy{
     background: black;
 }
 
