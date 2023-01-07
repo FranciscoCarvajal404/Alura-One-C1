@@ -115,7 +115,7 @@ aside{
     height: 80vh;
     width: 310px;
     gap: 40px;
-    padding: 50px;
+    padding: 32px;
 
     display: flex;
     flex-direction: column;
@@ -125,11 +125,9 @@ aside{
     border-radius: 32px;
 }
 
-aside img{
-    width: 336px;
-}
-
 .info{
+    width: 100%;
+    
     padding: 0px;
     gap: 20px;
 
@@ -138,5 +136,21 @@ aside img{
 
     text-align: center;
     line-height: 30px;
+}
 
+#encrypt{
+    width: 100%;
+
+    background: rgb(27, 27, 27);
+
+    border: none;
+    resize: none;
+}
+
+#btn-copy{
+    background: black;
+}
+
+#btn-copy:hover{
+    background: white;
 }
