@@ -3,9 +3,12 @@
 body{
     background: black;
     color: white;
-
-    height: 90vh;
     padding: 40px;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     font-family: 'Roboto', sans-serif;
 }
@@ -17,21 +20,12 @@ h2{
 
 main{
     width: 100%;
+    max-height: 90%;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.principal{
-    width: 1000px;
-    gap: 40px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .imagen{
@@ -43,11 +37,28 @@ main{
     width: 96px;
 }
 
+.principal{
+    width: 100%;
+    gap: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: block;
+    max-width: 95%;
+}
+
 .encriptador{
     background: black;
     color: white;
 
     width: 95%;
+    height: 100%;
+    min-height: 75px;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -80,6 +91,7 @@ main{
 
 .botones{
     gap: 24px;
+    
 
     display: flex;
     flex-direction: row;
@@ -103,6 +115,10 @@ button{
     border-radius: 24px;
 }
 
+.encriptar, .desencriptar{
+    min-width: 340px;
+}
+
 button:hover{
     cursor: pointer;
     background: white;
@@ -113,7 +129,7 @@ aside{
     background: rgb(27, 27, 27);
 
     height: 80vh;
-    width: 310px;
+    width: 40%;
     gap: 40px;
     padding: 32px;
 
@@ -127,7 +143,7 @@ aside{
 
 .no-mensaje{
     gap: 32px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,11 +163,17 @@ aside{
     line-height: 30px;
 }
 
-.resultado{
+.texto-aside{
+    height: 90%;
     width: 100%;
+}
 
+.resultado{
     background: rgb(27, 27, 27);
     color: white;
+
+    width: 95%;
+    height: auto;
 
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -163,8 +185,76 @@ aside{
 .btn-copy{
     background: #3c3c3c;
     border: none;
+
+    min-width: 260px;
 }
 
 #btn-copy:hover{
     background: white;
+}
+
+@media screen and (max-width:1200px){
+    body{
+        display: block;
+        height: 100%;
+
+    }
+    
+    main{
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    textarea{
+        height: auto;
+    }
+
+
+    .imagen{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .encriptador{
+        height: 475px;
+    }
+
+    aside{
+        height: auto;
+        width: 80%;
+    }
+
+    .img-aside{
+        display: none;
+    }
+
+    .resultado{
+        height: 175px;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:720px){
+    .encriptador{
+        height: 425px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .botones{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .resultado{
+        height: 435px;
+        width: 95%;
+    }
+
+    .inter{
+        width: 95%;
+    }
 }
